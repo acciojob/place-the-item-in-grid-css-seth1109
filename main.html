@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>2x2 Grid</title>
+
+  <style>
+    /* Grid container */
+    .holder {
+      display: grid;
+      width: 200px;
+      height: 200px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* Optional styling for visibility (items not modified structurally) */
+    .holder div {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="holder">
-    	<div class="item item-1">1</div>
-    	<div class="item item-2">2</div>
-    	<div class="item item-3">3</div>
-    	<div class="item item-4">4</div>
-   </div>
-   <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="holder">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
 
 </body>
-
 </html>
